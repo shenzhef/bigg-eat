@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_dias_viernes",
+  "info": {
+    "displayName": "viernes",
+    "icon": "ban",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "comida": {
+      "type": "enumeration",
+      "enum": ["almuerzo", "merienda", "colacion", "cena"]
+    },
+    "alimentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloque.alimentos"
+    }
+  }
+}

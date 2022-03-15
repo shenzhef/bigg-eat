@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bloque_semanas",
+  "info": {
+    "singularName": "bloque-semana",
+    "pluralName": "bloque-semanas",
+    "displayName": "bloques semanales",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha": {
+      "type": "date"
+    },
+    "semana": {
+      "type": "integer"
+    },
+    "dias": {
+      "type": "dynamiczone",
+      "components": [
+        "dias.jueves",
+        "dias.lunes",
+        "dias.martes",
+        "dias.miercoles",
+        "dias.viernes"
+      ]
+    },
+    "dietas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dieta.dieta"
+    }
+  }
+}

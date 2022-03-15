@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_unidades_unidads",
+  "info": {
+    "displayName": "unidad",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "unidad": {
+      "type": "enumeration",
+      "enum": [
+        "gramos",
+        "onzas",
+        "porcion",
+        "mililitros"
+      ]
+    },
+    "cantidad": {
+      "type": "integer"
+    }
+  }
+}

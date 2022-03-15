@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_dias_lunes",
+  "info": {
+    "displayName": "Lunes",
+    "icon": "ban",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "comida": {
+      "type": "enumeration",
+      "enum": [
+        "almuerzo",
+        "merienda",
+        "colacion",
+        "cena"
+      ]
+    },
+    "alimentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloque.alimentos"
+    }
+  }
+}

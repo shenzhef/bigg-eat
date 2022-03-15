@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_bloque_alimentos",
+  "info": {
+    "displayName": "alimentos",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alimento": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::alimento.alimento"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "unidad": {
+      "type": "enumeration",
+      "enum": [
+        "gramos",
+        "onzas",
+        "porciones",
+        "mililitros"
+      ]
+    },
+    "aclaracion": {
+      "type": "string"
+    }
+  }
+}

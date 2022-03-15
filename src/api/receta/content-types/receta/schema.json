@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recetas",
+  "info": {
+    "singularName": "receta",
+    "pluralName": "recetas",
+    "displayName": "recetas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "calorias": {
+      "type": "integer"
+    },
+    "alimentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloque.bloque"
+    }
+  }
+}

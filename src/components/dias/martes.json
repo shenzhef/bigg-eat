@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_dias_martes",
+  "info": {
+    "displayName": "martes",
+    "icon": "ban",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "comida": {
+      "type": "enumeration",
+      "enum": ["almuerzo", "merienda", "colacion", "cena"]
+    },
+    "alimentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloque.alimentos"
+    }
+  }
+}

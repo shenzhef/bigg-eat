@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dietas",
+  "info": {
+    "singularName": "dieta",
+    "pluralName": "dietas",
+    "displayName": "dietas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "calorias": {
+      "type": "integer"
+    },
+    "objetivo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::objetivo.objetivo",
+      "inversedBy": "dietas"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

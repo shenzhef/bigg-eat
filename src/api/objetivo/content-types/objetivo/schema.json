@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objetivos",
+  "info": {
+    "singularName": "objetivo",
+    "pluralName": "objetivos",
+    "displayName": "objetivos nutricionales",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "dietas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dieta.dieta",
+      "mappedBy": "objetivo"
+    }
+  }
+}

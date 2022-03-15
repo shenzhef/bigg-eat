@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alimentos",
+  "info": {
+    "singularName": "alimento",
+    "pluralName": "alimentos",
+    "displayName": "alimentos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "calorias": {
+      "type": "integer"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
+    },
+    "unidad": {
+      "type": "component",
+      "repeatable": false,
+      "component": "unidades.unidad"
+    }
+  }
+}

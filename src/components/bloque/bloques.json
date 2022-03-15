@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_dias_bloques",
+  "info": {
+    "displayName": "bloque-estructura",
+    "icon": "angle-double-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alimentos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloque.bloque"
+    }
+  }
+}
