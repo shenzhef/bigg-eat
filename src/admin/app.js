@@ -1,15 +1,7 @@
-import bigg from "./extensions/bigg.png";
-
 export default {
   config: {
     locales: ["es-AR", "es"],
-    head: {
-      favicon: bigg,
-      title: "BIGG EAT",
-    },
-    menu: {
-      logo: bigg,
-    },
+
     translations: {
       es: {
         "Auth.form.email.label": "test",
