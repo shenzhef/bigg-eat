@@ -12,15 +12,9 @@ module.exports = ({ env }) => ({
         "DATABASE_HOST",
         "app-146eac7f-6ccc-492f-a220-59f2b43bd15b-do-user-11248998-0.b.db.ondigitalocean.com"
       ),
-      ssl: env("DATABASE_SSL", false),
-      //  {
-      //   rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
-      // },
-      // filename: path.join(
-      //   __dirname,
-      //   "..",
-      //   env("DATABASE_FILENAME", "./tmp/data.db")
-      // ),
+      ssl: {
+        rejectUnauthorized: env.bool("DATABASE_SSL_SELF", false), // For self-signed certificates
+      },
     },
     useNullAsDefault: true,
   },
