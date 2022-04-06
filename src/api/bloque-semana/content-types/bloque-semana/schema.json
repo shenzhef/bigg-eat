@@ -18,20 +18,48 @@
     "semana": {
       "type": "integer"
     },
-    "dias": {
-      "type": "dynamiczone",
-      "components": [
-        "dias.jueves",
-        "dias.lunes",
-        "dias.martes",
-        "dias.miercoles",
-        "dias.viernes"
-      ]
-    },
     "dietas": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::dieta.dieta"
+    },
+    "Lunes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.lunes"
+    },
+    "Martes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.martes"
+    },
+    "Miercoles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.miercoles"
+    },
+    "Jueves": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.jueves"
+    },
+    "Viernes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.viernes"
+    },
+    "Sabado": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.sabado"
+    },
+    "Domingo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dias.domingo"
+    },
+    "mes": {
+      "type": "string"
     }
   }
 }

@@ -13,7 +13,9 @@
         "gramos",
         "onzas",
         "porcion",
-        "mililitros"
+        "mililitros",
+        "cucharada",
+        "unidad"
       ]
     },
     "cantidad": {

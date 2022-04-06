@@ -16,6 +16,8 @@ module.exports = {
   },
   beforeUpdate(event) {
     const { data, where, select, populate } = event.params;
+
+
     // if (result.nombre && result.calorias) {
     if (data.fecha) {
       console.log("dia", moment(data).format("dddd"));
