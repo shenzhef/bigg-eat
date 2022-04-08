@@ -9,7 +9,7 @@
     "attributes": {
       "comida": {
         "type": "enumeration",
-        "enum": ["almuerzo", "merienda", "colacion", "cena"]
+        "enum": [ "desayuno","almuerzo", "merienda", "colacion", "cena"]
       },
       "alimentos": {
         "type": "component",

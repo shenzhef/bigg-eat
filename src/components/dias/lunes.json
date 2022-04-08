@@ -10,6 +10,7 @@
     "comida": {
       "type": "enumeration",
       "enum": [
+        "desayuno",
         "almuerzo",
         "merienda",
         "colacion",
