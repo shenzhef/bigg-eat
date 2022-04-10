@@ -22,11 +22,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::categoria.categoria"
-    },
-    "unidad": {
-      "type": "component",
-      "repeatable": false,
-      "component": "unidades.unidad"
     }
   }
 }

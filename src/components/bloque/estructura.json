@@ -1,15 +1,20 @@
 {
-  "collectionName": "components_dias_jueves",
+  "collectionName": "components_bloque_estructuras",
   "info": {
-    "displayName": "Jueves",
-    "icon": "ban",
-    "description": ""
+    "displayName": "estructura",
+    "icon": "award"
   },
   "options": {},
   "attributes": {
     "comida": {
       "type": "enumeration",
-      "enum": [ "desayuno","almuerzo", "merienda", "colacion", "cena"]
+      "enum": [
+        "desayuno",
+        "colacion",
+        "almuerzo",
+        "merienda",
+        "cena"
+      ]
     },
     "alimentos": {
       "type": "component",

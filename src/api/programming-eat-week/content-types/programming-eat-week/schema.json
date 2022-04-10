@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "bloque_semanas",
+  "collectionName": "programming_eat_weeks",
   "info": {
-    "singularName": "bloque-semana",
-    "pluralName": "bloque-semanas",
-    "displayName": "bloques semanales",
+    "singularName": "programming-eat-week",
+    "pluralName": "programming-eat-weeks",
+    "displayName": "Programación semanal",
     "description": ""
   },
   "options": {
@@ -18,48 +18,43 @@
     "semana": {
       "type": "integer"
     },
-    "dietas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::dieta.dieta"
+    "mes": {
+      "type": "string"
     },
     "Lunes": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.lunes"
+      "component": "bloque.estructura"
     },
     "Martes": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.martes"
+      "component": "bloque.estructura"
     },
     "Miercoles": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.miercoles"
+      "component": "bloque.estructura"
     },
     "Jueves": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.jueves"
+      "component": "bloque.estructura"
     },
     "Viernes": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.viernes"
+      "component": "bloque.estructura"
     },
     "Sabado": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.sabado"
+      "component": "bloque.estructura"
     },
     "Domingo": {
       "type": "component",
       "repeatable": true,
-      "component": "dias.domingo"
-    },
-    "mes": {
-      "type": "string"
+      "component": "bloque.estructura"
     }
   }
 }

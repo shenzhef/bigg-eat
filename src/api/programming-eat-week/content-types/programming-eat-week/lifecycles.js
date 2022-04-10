@@ -16,14 +16,13 @@ module.exports = {
       },
 beforeUpdate(event) {
     const { data, where, select, populate } = event.params;
-    console.log('data',data);
+    console.log('data',data); 
+   
     if (data.fecha) {
         console.log('semana', moment(data.fecha).week());
       data.semana = moment(data.fecha).week();
       data.mes = moment(data.fecha).format('MMMM')
     }
-    // data.slug = slugify(data.nombre + "-" + data.calorias, { lower: true });
-    // }
-    // do something to the result;
+
   },
 }

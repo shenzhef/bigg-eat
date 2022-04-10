@@ -17,11 +17,6 @@
     },
     "calorias": {
       "type": "integer"
-    },
-    "alimentos": {
-      "type": "component",
-      "repeatable": true,
-      "component": "bloque.bloque"
     }
   }
 }
