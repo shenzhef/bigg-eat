@@ -5,7 +5,9 @@
     "icon": "bacon",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "mainField": "alimento.nombre"
+  },
   "attributes": {
     "alimento": {
       "type": "relation",

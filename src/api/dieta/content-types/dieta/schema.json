@@ -8,7 +8,10 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": true,
+    "privateAttributes": ["updatedAt", "createdAt"],
+    "populateCreatorFields": false
+
   },
   "pluginOptions": {},
   "attributes": {
